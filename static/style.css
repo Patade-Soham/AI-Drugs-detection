@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2d3436;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #dfe6e9;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0984e3;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0984e3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0765c9;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f1f2f6;
+    text-align: left;
+}
+
+/* BADGES */
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.badge-high {
+    background-color: #e84118;
+    color: white;
+}
+
+.badge-moderate {
+    background-color: #fbc531;
+    color: black;
+}
+
+.badge-low {
+    background-color: #4cd137;
+    color: white;
+}

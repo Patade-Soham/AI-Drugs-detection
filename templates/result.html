@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="card">
+    <h2>Analysis Result</h2>
+
+    <p><strong>Medicines:</strong> {{ medicines }}</p>
+
+    {% if severity == "HIGH" %}
+        <span class="badge-high">HIGH RISK</span>
+    {% elif severity == "MODERATE" %}
+        <span class="badge-moderate">MODERATE RISK</span>
+    {% elif severity == "LOW" %}
+        <span class="badge-low">LOW RISK</span>
+    {% else %}
+        <span>UNKNOWN</span>
+    {% endif %}
+
+    <hr>
+
+    <h4>Risk Explanation</h4>
+    <p>{{ risk }}</p>
+
+    <h4>Medical Recommendation</h4>
+    <p>{{ recommendation }}</p>
+
+    <br>
+    <a href="/">Check Another</a>
+</div>
+</body>
+</html>
